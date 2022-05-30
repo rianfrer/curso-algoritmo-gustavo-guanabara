@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    
+    <script>
+
+        var imc, altura, massa;
+
+        altura = parseFloat(prompt("Informe sua altura:"));
+        massa = parseFloat(prompt("Informe sua massa:"));
+
+        imc = massa / (altura * altura);
+
+        document.write("Seu IMC é: " + imc);
+
+        if( imc >= 18.5 && imc < 25){
+            document.write("Voçê está no peso ideal");
+        }else{
+            document.write("Voçê não está no peso ideal");
+        }
+
+    </script>
+
+</body>
+</html>
